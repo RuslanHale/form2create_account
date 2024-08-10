@@ -1,0 +1,28 @@
+# directory node
+node_modules/
+
+# Output file CSS
+output.css
+
+# Logs
+logs
+*.log
+
+# Setting env
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Directories, that can be created during development
+dist/
+build/
+
+# VS Code settings
+.vscode/
