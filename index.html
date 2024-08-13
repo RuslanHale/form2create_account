@@ -16,8 +16,11 @@
   </head>
 
   <body>
-    <div title="main">
-      <div title="left" class="grid h-full w-2/5 bg fixed bg-left bg-[#007AFF]">
+    <div title="main" class="flex">
+      <div
+        title="left"
+        class="col-span-1 h-screen w-2/5 bg bg-left bg-[#007AFF]"
+      >
         <div
           class="font-semibold font-poppins text-center mt-[7%] 2xl:text-2xl lg:text-lg sm:text-sm text-xs text-white"
         >
@@ -30,25 +33,27 @@
           <div title="phones" class="grid">
             <img
               src="/phone.png"
-              alt="phone_1"
-              class="absolute w-[30%] h-auto left-[23%] mt-[10%]"
+              alt="phone_2"
+              class="w-[30%] h-auto justify-self-left"
+            />
+            <img
+              src="/phone.png"
+              alt="phone_3"
+              class="w-[30%] h-auto justify-self-right"
             />
             <img
               src="/phone.png"
               alt="phone_1"
-              class="absolute w-[30%] h-auto left-[47%] mt-[10%]"
-            />
-            <img
-              src="/phone.png"
-              alt="phone_1"
-              class="absolute w-[42%] h-auto justify-self-center overflow-visible"
+              class="w-[42%] h-auto justify-self-center overflow-visible"
             />
           </div>
         </div>
       </div>
-      <div title="right">
+      <div title="right" class="">
         <div title="window">
-          <div title="logo"></div>
+          <div title="logo">
+            <img src="/icon.png" alt="phone_1" class="absolute w-[2%] h-auto" />
+          </div>
           <div title="input "></div>
           <div title="buttons">
             <div></div>
