@@ -3,33 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link href="/output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
 
   <body>
     <div title="main">
-      <div title="left" class="h-full w-2/5 bg fixed bg-left bg-[#007AFF]">
-        <div class="text-center">Hello, world</div>
+      <div title="left" class="grid h-full w-2/5 bg fixed bg-left bg-[#007AFF]">
+        <div
+          class="font-poppins text-center mt-[7%] 2xl:text-2xl lg:text-lg sm:text-sm text-xs text-white"
+        >
+          Social media shared today, tomorrow or by location
+        </div>
         <div
           title="circle"
-          class="aspect-square absolute top-1/4 left-[12.5%] w-3/4 bg-gradient-to-br from-custom-blue-2 to-custom-blue-1 rounded-full"
+          class="aspect-square justify-self-center top-1/4 w-3/4 bg-gradient-to-br from-custom-blue-2 to-custom-blue-1 rounded-full"
         >
-          <div title="phones">
+          <div title="phones" class="grid">
             <img
               src="/7b99a15d34ba262f413e00eac898ea89.png"
               alt="phone_1"
-              class="absolute w-[43%] h-auto top-[12%] left-[14%]"
+              class="absolute w-[30%] h-auto left-[23%] mt-[10%]"
             />
             <img
               src="/7b99a15d34ba262f413e00eac898ea89.png"
               alt="phone_1"
-              class="absolute w-[43%] h-auto top-[12%] left-[44%]"
+              class="absolute w-[30%] h-auto left-[47%] mt-[10%]"
             />
             <img
               src="/7b99a15d34ba262f413e00eac898ea89.png"
               alt="phone_1"
-              class="absolute w-[56%] h-auto top-0 left-[23%]"
+              class="absolute w-[42%] h-auto justify-self-center overflow-visible"
             />
           </div>
         </div>
