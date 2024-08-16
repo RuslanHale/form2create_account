@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .input-style {
+    @apply border text-2xl w-[95%] md:h-[85%] rounded;
+  }
+}
