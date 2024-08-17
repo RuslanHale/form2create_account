@@ -53,18 +53,18 @@
         <div title="window" class="container mx-[12%] mt-[5%] w-[70%] text-xs">
           <div title="logo" class="flex items-center gap-x-[1%]">
             <img src="/icon.png" alt="phone_1" class="w-[5%] h-auto" />
-            <p class="font-semibold -mt-[1%] text-lg">Logo</p>
+            <p class="font-semibold -mt-[1%] md:text-lg text-base">Logo</p>
           </div>
-          <div title="short description" class="object-contain mt-[8%]">
-            <p class="font-semibold text-2xl">Create account</p>
+          <div title="short description" class="object-contain mt-[9%]">
+            <p class="font-semibold md:text-2xl text-xl">Create account</p>
             <p class="py-[1%]">For business, band or celebrity.</p>
           </div>
           <form
             it="signupForm"
-            class="grid grid-rows-16 grid-cols-1 md:grid-rows-8 md:grid-cols-2 gap-y-[5%] gap-x-[2%] object-contain mt-[5%]"
+            class="grid grid-rows-16 grid-cols-1 md:grid-rows-8 md:grid-cols-2 gap-y-[5%] gap-x-[2%] object-contain mt-[7%]"
           >
-            <div>
-              <label for="first_name">First name<br /></label>
+            <div class="">
+              <label for="first_name" class="">First name<br /></label>
               <input type="text" id="first_name" class="input-style" />
             </div>
             <div>
@@ -95,20 +95,28 @@
                 class="input-style"
               />
             </div>
-            <div><input type="checkbox">Remember me<br>
-              <input type="checkbox">I agree to all the <a href="" class="text-custom-blue-1">Terms</a> and <a href="" class="text-custom-blue-1">Privacy policy</a>
+            <div class="grid grid-cols-1">
+              <div>
+                <input type="checkbox" class="mr-[3%]"/>Remember me
+              </div>
+              <div>
+                <input type="checkbox" class="mr-[3%]"/>I agree to all the <a href="" class="text-custom-blue-1">Terms</a> and <a href="" class="text-custom-blue-1">Privacy policy</a>
+              </div>
             </div>
-            <a href="http://google.com" class="text-right px-[5%] text-custom-blue-1">Forgot password?</a>
+            <a href="" class="text-right px-[5%] text-custom-blue-1">Forgot password?</a>
             <button type="button" class="justify-center bg-custom-blue-2 w-[95%] hover:bg-custom-blue-1 text-white font-bold py-[5%] rounded focus:outline-none focus:shadow-outline">
-              <span>Create account</span>
+              <span class="md:text-sm">Create account</span>
             </button>
             <button type="button" class="flex items-center justify-center bg-custom-dark w-[95%] hover:bg-slate-900 py-[5%] text-white font-bold rounded focus:outline-none focus:shadow-outline" >
               <img src="google_icon.png" class="w-[5%] mr-[3%]">
-              <span class="">Sign-in with google</span>
+              <span class="md:text-sm">Sign-in with google</span>
             </button>
-            <div class="md:col-span-2">Don't have account? <a href="" class="text-custom-blue-1">Log in</a></div>
-            <div>Google Play</div>
-            <div>Apple Play</div>
+            <div class="md:col-span-2 text-center">Don't have account? <a href="" class="text-custom-blue-1">Log in</a></div>
+            <div class="flex items-center justify-right">
+              <a href="https://play.google.com" class="mr-[3%]"><img src="google_play.svg"></a>
+              <a href="https://www.apple.com/store"><img src="app_store.svg"></a>
+            </div>
+
           </div>
         </form>
       </div>
