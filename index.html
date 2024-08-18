@@ -19,7 +19,7 @@
     <div title="main" class="flex font-poppins">
       <div
         title="left"
-        class="invisible w-0 h-0 lg:visible lg:h-screen lg:w-2/5 bg bg-left bg-[#007AFF]"
+        class="invisible w-0 h-0 lg:visible lg:h-screen lg:w-2/5 bg-left bg-gradient-to-br from-custom-blue-1 to-custom-blue-2"
       >
         <div
           class="font-semibold text-center mt-[7%] 2xl:text-2xl lg:text-lg text-white"
@@ -69,7 +69,7 @@
             id="signupForm"
             class="mt-[7%]"
           >
-            <div class="grid grid-rows-6 grid-cols-1 md:grid-rows-3 md:grid-cols-2 gap-y-[5%] gap-x-[4%]">
+            <div class="grid grid-rows-8 grid-cols-1 md:grid-rows-3 md:grid-cols-2 gap-y-[5%] gap-x-[4%]">
               <div>
                 <label for="firstName" class="">First name</label>
                 <input type="text" id="firstName" class="input-style" />
@@ -98,17 +98,16 @@
                 <input type="password" id="confirmPassword" class="input-style" />
               </div>
             </div>
-            
-            <div class="flex flex-col mt-11">
-              <div><input
+            <div class="flex flex-col mt-[10%]">
+              <div class="flex items-center mb-4"><input
                 type="checkbox"
                 id="rememberMe"
-                class="border-[1px] border-r-2 w-5 mr-3"
+                class="w-5 h-5 mr-3 text-blue-600 bg-gray-100 focus:ring-blue-500"
               /><label for="rememberMe">Remember me</label></div>
-              <div><input
+              <div class="flex items-center"><input
                 type="checkbox"
                 id="terms"
-                class="border-[1px] border-r-2 w-5 mr-3"
+                class="w-5 h-5 mr-3 text-blue-600 bg-gray-100 rounded focus:ring-blue-500"
               /><label for="terms"
                 >I agree to all the
                 <a href="" class="text-custom-blue-1">Terms</a>
@@ -151,7 +150,7 @@
           </div>
       </div>
     </div>
-
+      
     <script>
       console.log();
       function validateForm() {
