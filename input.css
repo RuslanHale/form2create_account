@@ -4,6 +4,6 @@
 
 @layer components {
   .input-style {
-    @apply border text-2xl w-[100%] md:h-[85%] rounded;
+    @apply border text-xl w-[100%] md:h-[80%] rounded-xl;
   }
 }
