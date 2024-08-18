@@ -19,7 +19,7 @@
     <div title="main" class="flex font-poppins">
       <div
         title="left"
-        class="invisible w-0 h-0 md:visible md:h-screen md:w-2/5 bg bg-left bg-[#007AFF]"
+        class="invisible w-0 h-0 lg:visible lg:h-screen lg:w-2/5 bg bg-left bg-[#007AFF]"
       >
         <div
           class="font-semibold text-center mt-[7%] 2xl:text-2xl lg:text-lg text-white"
@@ -49,9 +49,14 @@
           </div>
         </div>
       </div>
-      <div title="right" class="flex items-center 
-      justify-center h-screen md:w-3/5">
-        <div title="window" class="md:mx-[12%] md:mt-[2%] w-[85%] md:w-[70%] text-xs">
+      <div
+        title="right"
+        class="flex h-screen lg:w-3/5 justify-center"
+      >
+        <div
+          title="window"
+          class="lg:mx-[12%] mt-[2%] lg:mt-[3%] w-[85%] lg:w-[70%] text-sm"
+        >
           <div title="logo" class="flex items-center gap-x-[1%]">
             <img src="image/icon.png" class="w-10 h-auto" />
             <p class="font-semibold -mt-[1%] md:text-lg text-base">Logo</p>
@@ -61,90 +66,103 @@
             <p class="py-[1%]">For business, band or celebrity.</p>
           </div>
           <form
-            it="signupForm"
-            class="grid grid-rows-18 grid-cols-1 md:grid-rows-9 md:grid-cols-2 gap-y-[5%] gap-x-[4%] object-contain mt-[7%]"
+            id="signupForm"
+            class="mt-[7%]"
           >
-            <div>
-              <label for="firstName">First name</label>
-              <input type="text" id="firstName" class="input-style" />
-            </div>
-            <div>
-              <label for="lastName">Last name</label>
-              <input type="text" id="lastName" class="input-style" />
-            </div>
-            <div>
-              <label for="contact">Email or phone number</label>
-              <input
-                type="text"
-                id="contact"
-                class="input-style"
-              />
-            </div>
-            <div>
-              <label for="date">Date of birth (MM/DD/YY)</label>
-              <input type="date" id="date" class="input-style" />
-            </div>
-            <div>
-              <label for="password">Password</label>
-              <input type="password" id="password" class="input-style" />
-            </div>
-            <div>
-              <label for="confirmPassword">Confirm password</label>
-              <input
-                type="password"
-                id="confirmPassword"
-                class="input-style"
-              />
-            </div>
-            <div class="grid grid-cols-1">
+            <div class="grid grid-rows-6 grid-cols-1 md:grid-rows-3 md:grid-cols-2 gap-y-[5%] gap-x-[4%]">
               <div>
-                <input type="checkbox" id="rememberMe" class="mr-[3%]"/>Remember me
+                <label for="firstName" class="">First name</label>
+                <input type="text" id="firstName" class="input-style" />
               </div>
               <div>
-                <input type="checkbox" id="terms" class="mr-[3%]"/>
-                  I agree to all the 
-                  <a href="" class="text-custom-blue-1">Terms</a>
-                   and <a href="" class="text-custom-blue-1">Privacy policy</a>
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" class="input-style" />
               </div>
-            </div>
-            <a href="" class="text-right px-[5%] text-custom-blue-1">Forgot password?</a>
-            <button 
-              type="button" 
-              onclick="validateForm()" 
-              class="justify-center bg-custom-blue-2 w-[100%] hover:bg-custom-blue-1 text-white font-bold py-[5%] rounded focus:outline-none focus:shadow-outline">
-              <span class="md:text-sm">Create account</span>
-            </button>
-            <button
-              type="button"
-              class="flex items-center justify-center bg-custom-dark w-[100%] hover:bg-slate-900 py-[5%] text-white font-bold rounded focus:outline-none focus:shadow-outline" >
-              <img src="image/google_icon.png" class="w-[5%] mr-[3%]">
-              <span class="md:text-sm">Sign-in with google</span>
-            </button>
-            <div class="md:col-span-2 text-center">
-              <div id="message" class="hidden text-sm rounded w-[97.5%]"></div>
-              Don't have account? <a href="" class="text-custom-blue-1">Log in</a>
-              
-            </div>
-            <div class="flex items-center justify-center md:justify-right ">
-              <a href="https://play.google.com" class="mr-[3%]"><img src="image/google_play.svg"></a>
-              <a href="https://www.apple.com/store"><img src="image/app_store.svg"></a>
+              <div>
+                <label for="contact">Email or phone number</label>
+                <input type="text" id="contact" class="input-style" />
+              </div>
+              <div>
+                <label for="date"
+                  >Date of birth
+                  <span class="text-xs text-gray-600">(MM/DD/YYYY)</span></label
+                >
+                <input type="date" id="date" class="input-style" />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" class="input-style" />
+              </div>
+              <div>
+                <label for="confirmPassword">Confirm password</label>
+                <input type="password" id="confirmPassword" class="input-style" />
+              </div>
             </div>
             
+            <div class="flex flex-col mt-11">
+              <div><input
+                type="checkbox"
+                id="rememberMe"
+                class="border-[1px] border-r-2 w-5 mr-3"
+              /><label for="rememberMe">Remember me</label></div>
+              <div><input
+                type="checkbox"
+                id="terms"
+                class="border-[1px] border-r-2 w-5 mr-3"
+              /><label for="terms"
+                >I agree to all the
+                <a href="" class="text-custom-blue-1">Terms</a>
+                and
+                <a href="" class="text-custom-blue-1">Privacy policy</a></label
+              ></div>
+            </div>
+            <a href="" class="text-right text-custom-blue-1"
+              >Forgot password?</a
+            >
+            <div id="message" class="flex justify-center items-center col-span-2 text-sm rounded h-6"></div>
+            <div class="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 gap-y-[5%] gap-x-[4%]">
+              <button
+                type="button"
+                onclick="validateForm()"
+                class="flex items-center justify-center bg-custom-blue-2 w-[100%] h-[70%] hover:bg-custom-blue-1 text-white font-bold py-[5%] rounded focus:outline-none focus:shadow-outline"
+              >
+                <span class="md:text-sm">Create account</span>
+              </button>
+              <button
+                type="button"
+                class="flex items-center justify-center bg-custom-dark w-[100%] h-[70%] hover:bg-slate-900 py-[5%] text-white font-bold rounded focus:outline-none focus:shadow-outline"
+              >
+                <img src="image/google_icon.png" class="w-[5%] mr-[3%]" />
+                <span class="md:text-sm">Sign-in with google</span>
+              </button>
+            </div>
+          </form>
+          <div class="md:col-span-2 text-center">
+            Don't have account?
+            <a href="" class="text-custom-blue-1">Log in</a>
           </div>
-        </form>
-        
+          <div class="flex items-center justify-center md:justify-right mb-">
+            <a href="https://play.google.com" class="mr-[3%]"
+              ><img src="image/google_play.svg"
+            /></a>
+            <a href="https://www.apple.com/store"
+              ><img src="image/app_store.svg"
+            /></a>
+          </div>
       </div>
     </div>
 
     <script>
-      console.log()
+      console.log();
       function validateForm() {
         const firstName = document.getElementById("firstName").value.trim();
         const lastName = document.getElementById("lastName").value.trim();
         const contact = document.getElementById("contact").value.trim();
         const date = document.getElementById("date").value.trim();
         const password = document.getElementById("password").value.trim();
-        const confirmPassword = document.getElementById("confirmPassword").value.trim();
+        const confirmPassword = document
+          .getElementById("confirmPassword")
+          .value.trim();
         const terms = document.getElementById("terms").checked;
         const messageDiv = document.getElementById("message");
 
