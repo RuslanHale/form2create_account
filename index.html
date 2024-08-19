@@ -40,9 +40,10 @@
   </head>
 
   <body>
-    <div title="main" class="flex font-poppins">
+    <!-- main -->
+    <div class="flex font-poppins"> 
+      <!-- left -->
       <div
-        title="left"
         class="invisible w-0 h-0 lg:visible lg:h-screen lg:w-2/5 bg-left bg-gradient-to-br from-custom-blue-1 to-custom-blue-2"
       >
         <div
@@ -50,11 +51,12 @@
         >
           Social media shared today, tomorrow<br />or by location
         </div>
+        <!-- circle -->
         <div
-          title="circle"
           class="relative mt-[10%] mx-auto aspect-square w-[80%] bg-gradient-to-br from-custom-blue-2 to-custom-blue-1 rounded-full"
         >
-          <div title="phones" class="container">
+          <!-- phones -->
+          <div class="container">
             <img
               src="image/phone.png"
               alt="phone_1"
@@ -73,19 +75,21 @@
           </div>
         </div>
       </div>
+      <!-- right -->
       <div
-        title="right"
         class="flex h-screen lg:w-3/5 justify-center"
-      >
+      > 
+        <!-- window -->
         <div
-          title="window"
           class="lg:mx-[12%] mt-[3%] lg:mt-[5%] w-[85%] lg:w-[70%] text-sm"
         >
-          <div title="logo" class="flex items-center gap-x-[1%]">
+          <!-- logo -->
+          <div class="flex items-center gap-x-[1%]">
             <img src="image/icon.png" class="w-10 h-auto" />
             <p class="font-semibold -mt-[1%] md:text-lg text-base">Logo</p>
           </div>
-          <div title="short description" class="object-contain mt-[8%]">
+          <!-- short description -->
+          <div class="object-contain mt-[8%]">
             <p class="font-semibold md:text-2xl text-xl">Create account</p>
             <p class="py-[1%]">For business, band or celebrity.</p>
           </div>
@@ -147,13 +151,13 @@
               <button
                 type="button"
                 onclick="validateForm()"
-                class="flex items-center justify-center bg-custom-blue-2 w-[100%] h-[75%] hover:bg-custom-blue-1 text-white font-bold rounded focus:outline-none focus:shadow-outline"
+                class="flex items-center justify-center bg-custom-blue-2 w-[100%] h-[75%] hover:bg-custom-blue-1 text-white rounded focus:outline-none focus:shadow-outline"
               >
                 <span class="md:text-sm">Create account</span>
               </button>
               <button
                 type="button"
-                class="flex items-center justify-center bg-custom-dark w-[100%] h-[75%] hover:bg-slate-900 py-[5%] text-white font-bold rounded focus:outline-none focus:shadow-outline"
+                class="flex items-center justify-center bg-custom-dark w-[100%] h-[75%] hover:bg-slate-900 py-[5%] text-white rounded focus:outline-none focus:shadow-outline"
               >
                 <img src="image/google_icon.png" class="w-[5%] mr-[3%]" />
                 <span class="md:text-sm">Sign-in with google</span>
